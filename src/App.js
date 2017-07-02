@@ -7,13 +7,12 @@ class App extends Component {
 
   readSram() {
     const dialog = window.require('electron').remote.dialog
+    const bytes = window.require('bytes-stream')
     const fs = window.require('fs')
     const result = dialog.showOpenDialog({properties: ['openFile']})
-    var readStream = fs.createReadStream(result[0], { start: 0x1E00})
-
-    readStream.on('data', function (chunk) {
-      console.log(chunk)
-    })
+    var readStream = fs.createReadStream(result[0], {start: 0x1E00})
+      .pipe(new bytes([0, 255]))
+      .on('data', d => console.log('data', d));
   }
 
   render() {
