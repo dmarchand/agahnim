@@ -2,34 +2,60 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+const dialog = window.require('electron').remote.dialog
+const bytes = window.require('bytes-stream')
+const fs = window.require('fs')
 
-class App extends Component {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {path: ""}
 
-  readSram() {
-    const dialog = window.require('electron').remote.dialog
-    const bytes = window.require('bytes-stream')
-    const fs = window.require('fs')
-    const result = dialog.showOpenDialog({properties: ['openFile']})
-    var readStream = fs.createReadStream(result[0], {start: 0x1E00})
+    this.readSram = this.readSram.bind(this)
+    this.parseFile = this.parseFile.bind(this)
+    this.startTimer = this.startTimer.bind(this)
+    this.tick = this.tick.bind(this)
+  }
+
+  startTimer () {
+    clearInterval(this.timer)
+    this.timer = setInterval(this.tick, 5000)
+  }
+
+  tick () {
+    const path = this.state.path
+
+    if(!path || path == "")
+    {
+      return
+    }
+
+    this.parseFile(path)
+  }
+
+  parseFile(filePath) {
+    readStream = fs.createReadStream(filePath, {start: 0x1E00})
       .pipe(new bytes([0, 255]))
       .on('data', d => console.log('data', d));
+  }
+
+  readSram() {
+    const result = dialog.showOpenDialog({properties: ['openFile']})
+
+    if(!result) {
+      return
+    }
+
+    this.startTimer()
+    this.setState({path: result[0]})
   }
 
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload!
-        </p>
-              {this.readSram()}
+        <button onClick={this.readSram}>Select file...</button>
       </div>
 
     );
   }
 }
-
-export default App;
