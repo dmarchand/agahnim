@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import SramWatcher from './SramWatcher';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import ItemTracker from './ItemTracker'
+import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<SramWatcher />, document.getElementById('root'));
-registerServiceWorker();
+const ITEMS = [
+  {name: 'Boomerang'}
+]
+
+ReactDOM.render(<ItemTracker items={ITEMS}/>, document.getElementById('root'))
+registerServiceWorker()

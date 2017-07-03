@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import PropTypes from 'prop-types';
 
 const dialog = window.require('electron').remote.dialog
 const bytes = window.require('bytes-stream')
@@ -25,7 +25,7 @@ export default class SramWatcher extends Component {
   tick () {
     const path = this.state.path
 
-    if(!path || path == "")
+    if(!path || path === "")
     {
       return
     }
@@ -36,7 +36,10 @@ export default class SramWatcher extends Component {
   parseFile(filePath) {
     fs.createReadStream(filePath, {start: 0x1E00})
       .pipe(new bytes([0, 255]))
-      .on('data', d => console.log('data', d));
+      .on('data', d => {
+        console.log('data', d)
+        this.props.updateItemDisplay(d)
+      });
   }
 
   readSram() {
@@ -55,7 +58,10 @@ export default class SramWatcher extends Component {
       <div className="App">
         <button onClick={this.readSram}>Select file...</button>
       </div>
-
     );
   }
 }
+
+SramWatcher.propTypes = {
+  updateItemDisplay: PropTypes.func,
+};
