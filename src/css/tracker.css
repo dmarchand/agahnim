@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: gray;
 }
 
 .App-logo {
@@ -8,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: black;
   height: 150px;
   padding: 20px;
   color: white;
@@ -23,10 +24,23 @@
   to { transform: rotate(360deg); }
 }
 
+#root
+{
+  background-color: gray;
+}
+
 .item-image
 {
-  width: 64px;
-  height: 64px;
+  width: 84px;
+  height: 84px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+.gray
+{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .boomerang-blue
@@ -49,8 +63,92 @@
   background: url(../images/bomb.png)
 }
 
-.gray
+.quake
 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background: url(../images/quake.png)
+}
+
+.bombos
+{
+  background: url(../images/bombos.png)
+}
+
+.ether
+{
+  background: url(../images/ether.png)
+}
+
+.ice-rod
+{
+  background: url(../images/ice-rod.png)
+}
+
+.fire-rod
+{
+  background: url(../images/fire-rod.png)
+}
+
+.lamp
+{
+  background: url(../images/lamp.png)
+}
+
+.hammer
+{
+  background: url(../images/hammer.png)
+}
+
+.book
+{
+  background: url(../images/book.png)
+}
+
+.bug-net
+{
+  background: url(../images/bug-net.png)
+}
+
+.somaria
+{
+  background: url(../images/cane-someria.png)
+}
+
+.byrna
+{
+  background: url(../images/cane-byrna.png)
+}
+
+.cape
+{
+  background: url(../images/cape.png)
+}
+
+.mirror
+{
+  background: url(../images/mirror.png)
+}
+
+.boots
+{
+  background: url(../images/boots.png)
+}
+
+.flippers
+{
+  background: url(../images/flippers.png)
+}
+
+.magic-powder
+{
+  background: url(../images/magic-powder.png)
+}
+
+.flute
+{
+  background: url(../images/flute.png)
+}
+
+.moon-pearl
+{
+  background: url(../images/moon-pearl.png)
 }

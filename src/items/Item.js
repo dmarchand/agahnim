@@ -5,7 +5,7 @@ export default class Item extends Component {
   {
     const index = this.props.index
     const val = this.props.data[index]
-    return this.props.levelIcons[val] + " item-image item-cell"
+    return "item-image " + this.props.levelIcons[val]
   }
 
   render()
