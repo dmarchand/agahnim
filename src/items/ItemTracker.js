@@ -4,12 +4,13 @@ import StandardItem from './StandardItem'
 import MinCountItem from './MinCountItem'
 import BitwiseItem from './BitwiseItem'
 import BowItem from './BowItem'
+import '../css/tracker.css'
 
 export default class ItemTracker extends Component {
   render() {
     return (
       <div>
-        <table>
+        <table className="window-background">
           <tbody>
             <tr>
               <BowItem name="Bow" levelIcons={["bow gray", "bow", "silver-bow"]} index="0" data={this.props.data}/>

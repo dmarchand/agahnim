@@ -3,3 +3,23 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.react-tabs__tab-list
+{
+  margin: 0px;
+  padding-bottom: 1px;
+}
+
+.react-tabs__tab
+{
+  border-radius: 5px 5px 0 0;
+  background-color: gray;
+}
+
+.react-tabs__tab--selected {
+  background-color: white !important;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0px;
+}
