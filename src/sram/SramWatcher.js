@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css'
+import '../css/tracker.css'
 import PropTypes from 'prop-types';
 
 const dialog = window.require('electron').remote.dialog

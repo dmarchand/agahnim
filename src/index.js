@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import ItemTracker from './ItemTracker'
+import './css/index.css'
+import ItemTracker from './items/ItemTracker'
 import registerServiceWorker from './registerServiceWorker'
 
 const ITEMS = [

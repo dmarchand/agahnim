@@ -25,14 +25,28 @@
 
 .item-image
 {
-  background-size : 150% 150%;
+  width: 64px;
+  height: 64px;
 }
 
 .boomerang-blue
 {
-  width: 32px;
-  height: 32px;
-  background: url(images/boomerang-blue.png)
+  background: url(../images/boomerang-blue.png)
+}
+
+.boomerang-red
+{
+  background: url(../images/magical-boomerang.png)
+}
+
+.hookshot
+{
+  background: url(../images/hookshot.png)
+}
+
+.bombs
+{
+  background: url(../images/bomb.png)
 }
 
 .gray
