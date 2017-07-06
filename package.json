@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "bytes-stream": "^1.0.0",
+    "electron-tabs": "^0.7.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
+    "react-tabs": "^1.1.0",
     "remote": "^0.2.6"
   },
   "scripts": {

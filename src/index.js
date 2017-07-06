@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './css/index.css'
-import ItemTracker from './items/ItemTracker'
+import MainDisplay from './MainDisplay'
 import registerServiceWorker from './registerServiceWorker'
+import './css/index.css'
 
 
 
-ReactDOM.render(<ItemTracker/>, document.getElementById('root'))
+ReactDOM.render(
+  <MainDisplay/>
+  ,
+  document.getElementById('root')
+)
 registerServiceWorker()
