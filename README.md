@@ -22,6 +22,7 @@ Some new automatic time-tracking features are in the works!
 * A few items probably don't have their correct offsets
 * The bow does not function properly
 * The bottle does not function properly
+* Release binaries have huge file sizes right now. Not sure how much of this can be mitigated, given how Electron works. Going to look into it
 
 # Contributing
 If you can stand my horrible knowledge of the JS ecosystem, you're welcome to create Pull Requests for any features/fixes you're interested in.
