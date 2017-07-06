@@ -19,7 +19,7 @@ export default class SramWatcher extends Component {
 
   startTimer () {
     clearInterval(this.timer)
-    this.timer = setInterval(this.tick, 5000)
+    this.timer = setInterval(this.tick, 1000)
   }
 
   tick () {
