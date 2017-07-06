@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Item from './Item'
 
 export default class BowItem extends Component {
   getLevelSprite()
@@ -23,7 +24,7 @@ export default class BowItem extends Component {
   render()
   {
     return(
-      <td className={this.getLevelSprite()}/>
+      <Item displayClass={this.getLevelSprite()}/>
     )
   }
 }

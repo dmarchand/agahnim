@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.item-image
+{
+  background-size : 150% 150%;
+}
+
+.boomerang-blue
+{
+  width: 32px;
+  height: 32px;
+  background: url(images/boomerang-blue.png)
+}
+
+.gray
+{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

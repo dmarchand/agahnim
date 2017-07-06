@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Item from './Item'
 
 export default class BitwiseItem extends Component {
   getLevelSprite()
@@ -19,7 +20,7 @@ export default class BitwiseItem extends Component {
   render()
   {
     return(
-      <td className={this.getLevelSprite()}/>
+      <Item displayClass={this.getLevelSprite()}/>
     )
   }
 }
