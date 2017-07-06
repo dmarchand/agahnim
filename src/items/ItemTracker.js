@@ -52,6 +52,13 @@ export default class ItemTracker extends Component {
               <Item name="Quake" levelIcons={["quake gray", "quake"]} index="9" data={this.state.data}/>
             </tr>
             <tr>
+              <BitwiseItem name="Pendant of Wisdom" levelIcons={["pendant-wisdom gray", "pendant-wisdom"]} bit="0" index="52" data={this.state.data}/>
+              <BitwiseItem name="Pendant of Power" levelIcons={["pendant-power gray", "pendant-power"]} bit="1" index="52" data={this.state.data}/>
+              <BitwiseItem name="Pendant of Courage" levelIcons={["pendant-courage gray", "pendant-courage"]} bit="2" index="52" data={this.state.data}/>
+              <BitwiseItem name="Agahnim" levelIcons={["agahnim gray", "agahnim"]} bit="3" index="52" data={this.state.data}/>
+
+            </tr>
+            <tr>
               <BitwiseItem name="Palace of Darkness" levelIcons={["pod gray", "pod"]} bit="1" index="58" data={this.state.data}/>
               <BitwiseItem name="Swamp Palace" levelIcons={["swamp gray", "swamp"]} bit="4" index="58" data={this.state.data}/>
               <BitwiseItem name="Skull Woods" levelIcons={["skull-woods gray", "skull-woods"]} bit="6" index="58" data={this.state.data}/>
