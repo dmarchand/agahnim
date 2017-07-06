@@ -4,9 +4,7 @@ import './css/index.css'
 import ItemTracker from './items/ItemTracker'
 import registerServiceWorker from './registerServiceWorker'
 
-const ITEMS = [
-  {name: 'Boomerang'}
-]
 
-ReactDOM.render(<ItemTracker items={ITEMS}/>, document.getElementById('root'))
+
+ReactDOM.render(<ItemTracker/>, document.getElementById('root'))
 registerServiceWorker()

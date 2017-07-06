@@ -1,0 +1,3 @@
+const ITEMS = [
+  {name: 'Boomerang'}
+]

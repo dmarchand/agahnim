@@ -31,10 +31,12 @@
 
 .item-image
 {
-  width: 84px;
-  height: 84px;
+  width: 60px;
+  height: 60px;
+  /* This isn't right, fix */
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-size: 50px 50px !important;
 }
 
 .gray
@@ -206,4 +208,84 @@
 .agahnim
 {
   background: url(../images/agahnim.png)
+}
+
+.bow
+{
+  background: url(../images/bow.png)
+}
+
+.silver-arrow
+{
+  background: url(../images/silver-arrow.png)
+}
+
+.silver-bow
+{
+  background: url(../images/silver-bow.png)
+}
+
+.power-glove
+{
+  background: url(../images/power-glove.png)
+}
+
+.titans-mitts
+{
+  background: url(../images/titans-mitt.png)
+}
+
+.mushroom
+{
+  background: url(../images/mushroom.png)
+}
+
+.fighter-sword
+{
+  background: url(../images/fighter-sword.png)
+}
+
+.master-sword
+{
+  background: url(../images/master-sword.png)
+}
+
+.tempered-sword
+{
+  background: url(../images/tempered-sword.png)
+}
+
+.butter-sword
+{
+  background: url(../images/golden-sword.png)
+}
+
+.green-tunic
+{
+  background: url(../images/green-mail.png)
+}
+
+.blue-tunic
+{
+  background: url(../images/blue-mail.png)
+}
+
+.red-tunic
+{
+  background: url(../images/red-mail.png)
+}
+
+.flute
+{
+  background: url(../images/flute.png)
+}
+
+.shovel
+{
+  background: url(../images/shovel.png)
+}
+
+.powder
+{
+  background: url(../images/magic-powder.png)
 }
