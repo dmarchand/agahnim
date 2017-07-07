@@ -3,7 +3,6 @@ import SramWatcher from '../sram/SramWatcher'
 import StandardItem from './StandardItem'
 import MinCountItem from './MinCountItem'
 import BitwiseItem from './BitwiseItem'
-import BowItem from './BowItem'
 import '../css/tracker.css'
 
 export default class ItemTracker extends Component {
@@ -13,7 +12,7 @@ export default class ItemTracker extends Component {
         <table className="window-background">
           <tbody>
             <tr>
-              <BowItem name="Bow" levelIcons={["bow gray", "bow", "silver-bow"]} index="0" data={this.props.data}/>
+              <StandardItem name="Bow" levelIcons={["bow gray", "bow", "silver-arrow", "silver-bow"]} index="0" data={this.props.data}/>
               <StandardItem name="Boomerang" levelIcons={["boomerang-blue gray", "boomerang-blue", "boomerang-red"]} index="1" data={this.props.data}/>
               <StandardItem name="Hookshot" levelIcons={["hookshot gray", "hookshot"]} index="2" data={this.props.data}/>
               <MinCountItem name="Bombs" levelIcons={["bombs gray", "bombs"]} index="3" data={this.props.data}/>
