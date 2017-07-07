@@ -29,7 +29,6 @@ export default class ItemTracker extends Component {
               <StandardItem name="Cane of Byrna" levelIcons={["byrna gray", "byrna"]} index="16" data={this.props.data}/>
               <StandardItem name="Cape" levelIcons={["cape gray", "cape"]} index="18" data={this.props.data}/>
               <BitwiseItem name="Mushroom" levelIcons={["mushroom gray", "mushroom"]} index="210" bit="5" data={this.props.data}/>
-
               <MinCountItem name="Mirror" levelIcons={["mirror gray", "mirror"]} index="19" data={this.props.data}/>
             </tr>
             <tr>
@@ -46,6 +45,9 @@ export default class ItemTracker extends Component {
               <BitwiseItem name="Powder" levelIcons={["powder gray", "powder"]} index="210" bit="4" data={this.props.data}/>
               <BitwiseItem name="Shovel" levelIcons={["shovel gray", "shovel"]} index="210" bit="2" data={this.props.data}/>
               <StandardItem name="Flute" levelIcons={["flute gray", "flute gray", "flute"]} index="12" data={this.props.data}/>
+              <MinCountItem name="Bottle" levelIcons={["bottle gray", "bottle"]} index="15" data={this.props.data}/>
+            </tr>
+            <tr>
               <BitwiseItem name="Pendant of Wisdom" levelIcons={["pendant-wisdom gray", "pendant-wisdom"]} bit="0" index="52" data={this.props.data}/>
               <BitwiseItem name="Pendant of Power" levelIcons={["pendant-power gray", "pendant-power"]} bit="1" index="52" data={this.props.data}/>
               <BitwiseItem name="Pendant of Courage" levelIcons={["pendant-courage gray", "pendant-courage"]} bit="2" index="52" data={this.props.data}/>
