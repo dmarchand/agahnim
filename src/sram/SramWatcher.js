@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import TrackingStatus from './TrackingStatus'
 import '../css/tracker.css'
 import PropTypes from 'prop-types';
 
@@ -9,7 +10,7 @@ const fs = window.require('fs')
 export default class SramWatcher extends Component {
   constructor(props) {
     super(props);
-    this.state = {path: ""}
+    this.state = {path: "", status: 0}
 
     this.readSram = this.readSram.bind(this)
     this.parseFile = this.parseFile.bind(this)
@@ -27,6 +28,7 @@ export default class SramWatcher extends Component {
 
     if(!path || path === "")
     {
+      this.setState({status: 1})
       return
     }
 
@@ -39,6 +41,7 @@ export default class SramWatcher extends Component {
       .on('data', d => {
         console.log('data', d)
         this.props.updateItemDisplay(d)
+        this.setState({status: 2})
       });
   }
 
@@ -55,7 +58,8 @@ export default class SramWatcher extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
+        <TrackingStatus status={this.state.status}/>
         <button onClick={this.readSram}>Select file...</button>
       </div>
     );

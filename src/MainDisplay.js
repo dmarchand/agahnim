@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ItemTracker from './items/ItemTracker'
 import SramWatcher from './sram/SramWatcher'
+import ConfigDisplay from './config/ConfigDisplay'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 
@@ -32,7 +33,10 @@ export default class MainDisplay extends Component {
         </TabList>
 
         <TabPanel>
-          <SramWatcher updateItemDisplay={this.updateItemDisplay.bind(this)}/>
+          <div className="window-background">
+            <ConfigDisplay/>
+            <SramWatcher updateItemDisplay={this.updateItemDisplay.bind(this)}/>
+          </div>
         </TabPanel>
         <TabPanel>
           <ItemTracker data={this.state.data}/>

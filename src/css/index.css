@@ -12,6 +12,7 @@ body {
 
 .react-tabs__tab
 {
+  font-family: 'Zelda';
   border-radius: 5px 5px 0 0;
   background-color: gray;
 }
@@ -22,4 +23,26 @@ body {
 
 .react-tabs__tab-list {
   border-bottom: 0px;
+}
+
+@font-face {
+  font-family: 'Zelda';
+  src: url('../fonts/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword-Regular.ttf.eot'),
+        url('../fonts/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword-Regular.ttf.woff') format('woff'),
+	      url('../fonts/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword-Regular.ttf.svg#webfont') format('svg');
+}
+
+.zelda-text {
+  color: white;
+  font-family: 'Zelda', Arial, sans-serif;;
+}
+
+.status-green
+{
+  color: green;
+}
+
+.status-red
+{
+  color: red;
 }
