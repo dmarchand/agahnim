@@ -22,7 +22,8 @@
     "pack": "build --dir",
     "dist": "npm run build && build",
     "postinstall": "install-app-deps",
-    "deploy": "npm run build && electron-packager . --out=deploy/ --overwrite --platform all"
+    "deploy": "npm run build && electron-packager . --out=deploy/ --overwrite --platform all && npm run archive",
+    "archive": "zip -r deploy/agahnim-windows.zip deploy/agahnim-win32-x64 && zip -r deploy/agahnim-linux.zip deploy/agahnim-linux-x64 && zip -r deploy/agahnim-osx.zip deploy/agahnim-darwin-x64"
   },
   "devDependencies": {
     "electron": "^1.6.11",

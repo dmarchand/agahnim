@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import SramWatcher from '../sram/SramWatcher'
 import StandardItem from './StandardItem'
 import MinCountItem from './MinCountItem'
 import BitwiseItem from './BitwiseItem'

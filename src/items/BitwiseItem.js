@@ -9,12 +9,12 @@ export default class BitwiseItem extends Component {
     const bit = this.props.bit
 
     const bits = []
-    for(var i = 0; i < 64; ++i)
+    for(var i = 0; i < 32; ++i)
       bits[i] = (val >> i) & 1;
 
     //console.log("Bits: " + bits)
     //console.log("Value: " + bits[bit])
-    return "item-image " + this.props.levelIcons[bits[bit] == 0 ? 0 : 1]
+    return "item-image " + this.props.levelIcons[bits[bit] === 0 ? 0 : 1]
   }
 
   render()
