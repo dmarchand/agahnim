@@ -12,7 +12,7 @@ export default class ItemTracker extends Component {
         <table className="window-background">
           <tbody>
             <tr>
-              <StandardItem name="Bow" levelIcons={["bow gray", "bow", "silver-arrow", "silver-bow"]} index="0" data={this.props.data}/>
+              <StandardItem name="Bow" levelIcons={["bow gray", "silver-arrow", "bow", "silver-bow"]} index="0" data={this.props.data}/>
               <StandardItem name="Boomerang" levelIcons={["boomerang-blue gray", "boomerang-blue", "boomerang-red"]} index="1" data={this.props.data}/>
               <StandardItem name="Hookshot" levelIcons={["hookshot gray", "hookshot"]} index="2" data={this.props.data}/>
               <MinCountItem name="Bombs" levelIcons={["bombs gray", "bombs"]} index="3" data={this.props.data}/>
@@ -44,7 +44,7 @@ export default class ItemTracker extends Component {
             <tr>
               <BitwiseItem name="Powder" levelIcons={["powder gray", "powder"]} index="210" bit="4" data={this.props.data}/>
               <BitwiseItem name="Shovel" levelIcons={["shovel gray", "shovel"]} index="210" bit="2" data={this.props.data}/>
-              <StandardItem name="Flute" levelIcons={["flute gray", "flute gray", "flute"]} index="12" data={this.props.data}/>
+              <MinCountItem name="Flute" levelIcons={["flute gray", "flute gray", "flute"]} index="12" data={this.props.data}/>
               <MinCountItem name="Bottle" levelIcons={["bottle gray", "bottle"]} index="15" data={this.props.data}/>
             </tr>
             <tr>
