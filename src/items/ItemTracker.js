@@ -25,8 +25,8 @@ export default class ItemTracker extends Component {
               <StandardItem name="Sword" levelIcons={["fighter-sword gray", "fighter-sword", "master-sword", "tempered-sword", "butter-sword"]} index="25" data={this.props.data}/>
               <StandardItem name="Book of Mudora" levelIcons={["book gray", "book"]} index="14" data={this.props.data}/>
               <StandardItem name="Bug Net" levelIcons={["bug-net gray", "bug-net"]} index="13" data={this.props.data}/>
-              <StandardItem name="Cane of Somaria" levelIcons={["somaria gray", "somaria"]} index="15" data={this.props.data}/>
-              <StandardItem name="Cane of Byrna" levelIcons={["byrna gray", "byrna"]} index="16" data={this.props.data}/>
+              <StandardItem name="Cane of Somaria" levelIcons={["somaria gray", "somaria"]} index="16" data={this.props.data}/>
+              <StandardItem name="Cane of Byrna" levelIcons={["byrna gray", "byrna"]} index="17" data={this.props.data}/>
               <StandardItem name="Cape" levelIcons={["cape gray", "cape"]} index="18" data={this.props.data}/>
               <BitwiseItem name="Mushroom" levelIcons={["mushroom gray", "mushroom"]} index="210" bit="5" data={this.props.data}/>
               <MinCountItem name="Mirror" levelIcons={["mirror gray", "mirror"]} index="19" data={this.props.data}/>
@@ -42,6 +42,7 @@ export default class ItemTracker extends Component {
               <StandardItem name="Quake" levelIcons={["quake gray", "quake"]} index="9" data={this.props.data}/>
             </tr>
             <tr>
+              <StandardItem name="Shield" levelIcons={["fighter-shield gray", "fighter-shield", "fire-shield", "mirror-shield"]} index="26" data={this.props.data}/>
               <BitwiseItem name="Powder" levelIcons={["powder gray", "powder"]} index="210" bit="4" data={this.props.data}/>
               <BitwiseItem name="Shovel" levelIcons={["shovel gray", "shovel"]} index="210" bit="2" data={this.props.data}/>
               <MinCountItem name="Flute" levelIcons={["flute gray", "flute gray", "flute"]} index="12" data={this.props.data}/>
