@@ -44,7 +44,7 @@ export default class ItemTracker extends Component {
               <StandardItem name="Shield" levelIcons={["fighter-shield gray", "fighter-shield", "fire-shield", "mirror-shield"]} index="26" data={this.props.data}/>
               <BitwiseItem name="Powder" levelIcons={["powder gray", "powder"]} index="210" bit="4" data={this.props.data}/>
               <BitwiseItem name="Shovel" levelIcons={["shovel gray", "shovel"]} index="210" bit="2" data={this.props.data}/>
-              <MinCountItem name="Flute" levelIcons={["flute gray", "flute gray", "flute"]} index="12" data={this.props.data}/>
+              <MinCountItem name="Flute" levelIcons={["flute gray", "flute", "flute"]} index="12" data={this.props.data}/>
               <MinCountItem name="Bottle" levelIcons={["bottle gray", "bottle"]} index="15" data={this.props.data}/>
             </tr>
             <tr>
