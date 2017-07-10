@@ -28,7 +28,8 @@
   "devDependencies": {
     "electron": "^1.6.11",
     "electron-builder": "^19.11.1",
-    "electron-packager": "^8.7.2"
+    "electron-packager": "^8.7.2",
+    "nf": "^0.0.3"
   },
   "homepage": "./",
   "main": "src/electron-starter.js",
