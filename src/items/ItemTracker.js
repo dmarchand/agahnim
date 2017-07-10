@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import StandardItem from './StandardItem'
 import MinCountItem from './MinCountItem'
 import BitwiseItem from './BitwiseItem'
+import ItemData from './ItemData'
 import '../css/tracker.css'
+
+
+
 
 export default class ItemTracker extends Component {
   render() {
@@ -31,7 +35,7 @@ export default class ItemTracker extends Component {
               <MinCountItem name="Mirror" levelIcons={["mirror gray", "mirror"]} index="19" data={this.props.data}/>
             </tr>
             <tr>
-              <StandardItem name="Boots" levelIcons={["boots gray", "boots", "boots"]} index="21" data={this.props.data}/>
+              <MinCountItem name="Boots" levelIcons={["boots gray", "boots", "boots"]} index="21" data={this.props.data}/>
               <StandardItem name="Mail" levelIcons={["green-tunic", "blue-tunic", "red-tunic"]} index="27" data={this.props.data}/>
               <StandardItem name="Flippers" levelIcons={["flippers gray", "flippers"]} index="22" data={this.props.data}/>
               <StandardItem name="Glove" levelIcons={["power-glove gray", "power-glove", "titans-mitts"]} index="20" data={this.props.data}/>
@@ -44,7 +48,7 @@ export default class ItemTracker extends Component {
               <StandardItem name="Shield" levelIcons={["fighter-shield gray", "fighter-shield", "fire-shield", "mirror-shield"]} index="26" data={this.props.data}/>
               <BitwiseItem name="Powder" levelIcons={["powder gray", "powder"]} index="210" bit="4" data={this.props.data}/>
               <BitwiseItem name="Shovel" levelIcons={["shovel gray", "shovel"]} index="210" bit="2" data={this.props.data}/>
-              <MinCountItem name="Flute" levelIcons={["flute gray", "flute", "flute"]} index="12" data={this.props.data}/>
+              <MinCountItem name="Flute" levelIcons={["flute gray", "flute"]} index="12" data={this.props.data}/>
               <MinCountItem name="Bottle" levelIcons={["bottle gray", "bottle"]} index="15" data={this.props.data}/>
             </tr>
             <tr>
