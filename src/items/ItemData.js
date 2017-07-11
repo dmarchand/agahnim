@@ -12,7 +12,7 @@ export default class ItemData
     miseryMire: {displayName: 'Crystal: Misery Mire', icons: ["mire gray", "mire"], index: 58, bit: 0},
     palaceOfDarkness: {displayName: 'Crystal: Palace of Darkness', icons: ["pod gray", "pod"], index: 58, bit: 1},
     skullWoods: {displayName: 'Crystal: Skull Woods', icons: ["skull-woods gray", "skull-woods"], index: 58, bit: 6},
-    swampPalace: {displayName: 'Crystal: Swamp Palace', icons: ["swamp gray", "swamp"], index 58, bit: 4},
+    swampPalace: {displayName: 'Crystal: Swamp Palace', icons: ["swamp gray", "swamp"], index: 58, bit: 4},
     thievesTown: {displayName: 'Crystal: Thieves Town', icons: ["thieves-town gray", "thieves-town"], index: 58, bit: 5},
     turtleRock: {displayName: 'Crystal: Turtle Rock', icons: ["turtle-rock gray", "turtle-rock"], index: 58, bit: 3},
 
