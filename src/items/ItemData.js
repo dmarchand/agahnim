@@ -1,6 +1,5 @@
-export default class ItemData
-{
-  ITEMS = {
+
+const ITEM_DATA = {
     // Pendants
     agahnim: {displayName: 'Aganhim Killed', icons: ["agahnim gray", "agahnim"], index: 52, bit: 3},
     courage: {displayName: 'Pendant of Courage', icons: ["pendant-courage gray", "pendant-courage"], index: 52, bit: 2},
@@ -49,4 +48,5 @@ export default class ItemData
     somaria: {displayName: 'Cane of Somaria', icons: ["somaria gray", "somaria"], index: 16},
     sword: {displayName: 'Sword', icons: ["fighter-sword gray", "fighter-sword", "master-sword", "tempered-sword", "butter-sword"], index: 25},
   }
-}
+
+export default ITEM_DATA;

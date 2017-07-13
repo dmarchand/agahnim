@@ -4,9 +4,9 @@ import Item from './Item'
 export default class StandardItem extends Component {
   getLevelSprite()
   {
-    const index = this.props.index
-    const val = this.props.data[index]
-    return "item-image " + this.props.levelIcons[val]
+    const index = this.props.itemData.index
+    const val = this.props.sramData[index]
+    return "item-image " + this.props.itemData.icons[val]
   }
 
   render()
