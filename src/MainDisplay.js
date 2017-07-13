@@ -25,7 +25,9 @@ export default class MainDisplay extends Component {
   render()
   {
     return(
-      <Tabs>
+      <Tabs
+        forceRenderTabPanel={true}
+      >
         <TabList>
           <Tab>Configuration</Tab>
           <Tab>Item Tracker</Tab>
