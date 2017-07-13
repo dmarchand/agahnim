@@ -5,8 +5,15 @@ export default class BitwiseItem extends Component {
   getLevelSprite()
   {
     const index = this.props.itemData.index
-    const val = this.props.sramData[index]
+    var val = this.props.sramData[index]
     const bit = this.props.itemData.bit
+
+    // Uninitialized SRAM has some undefined behavior, let's avoid that
+    if(val >= 96)
+    {
+      val = 0
+    }
+
 
     const bits = []
     for(var i = 0; i < 32; ++i)
